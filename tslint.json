@@ -1,0 +1,7 @@
+{
+    "extends": "tslint-config-origami",
+    "rules": {
+        "function-name": false,
+        "no-this-assignment": false
+    }
+}

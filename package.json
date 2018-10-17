@@ -1,0 +1,48 @@
+{
+  "name": "origami-app-pages",
+  "version": "0.0.0",
+  "description": "Origami app for pages",
+  "main": "index.html",
+  "repository": "https://github.com/origami-cms/app-pages",
+  "author": "Tristan Matthias <hello@tristanmatthias.com>",
+  "license": "MIT",
+  "scripts": {
+    "build:app:sass": "sass-render src/app/**/*.scss --suffix='-css.ts' --include node_modules/",
+    "build:app": "tsc -p src/app/tsconfig.json --outDir jsBuild/",
+    "build:rollup": "rollup -c; rm -rf jsBuild",
+    "build:routes": "rm -rf routes/; tsc -p src/routes/tsconfig.json",
+    "build": "yarn build:app:sass; yarn build:app; NODE_ENV=production yarn build:rollup",
+    "watch": "yarn build:app:sass -w & tsc -p src/app/tsconfig.json -w --outDir jsBuild/ & rollup -cw"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^7.1.2",
+    "@origamijs/zen": "^0.0.0",
+    "@origamijs/zen-lib": "^0.0.0",
+    "@polymer/lit-element": "^0.6.1",
+    "@types/express": "^4.16.0",
+    "@types/redux": "^3.6.0",
+    "@types/seamless-immutable": "^7.1.2",
+    "commitlint": "^7.2.1",
+    "husky": "^1.1.2",
+    "lit-html": "^0.11.4",
+    "origami-core-server": "^0.5.4-alpha.3",
+    "pwa-helpers": "^0.8.4",
+    "redux": "^4.0.0",
+    "rollup-plugin-alias": "^1.4.0",
+    "rollup-plugin-babel-minify": "^6.0.0",
+    "rollup-plugin-commonjs": "^9.1.8",
+    "rollup-plugin-multi-entry": "^2.0.2",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-replace": "^2.0.0",
+    "rollup-plugin-strip": "^1.2.0",
+    "seamless-immutable": "^7.1.4",
+    "tslint": "^5.11.0",
+    "tslint-config-origami": "^1.0.4",
+    "typescript": "^3.1.1",
+    "wc-sass-render": "^1.1.0",
+    "zen-css": "^1.1.16"
+  },
+  "dependencies": {
+    "origami-core-lib": "^0.3.14"
+  }
+}

@@ -1,0 +1,24 @@
+@import 'zen-css/import';
+@import 'zen-css/components/card';
+
+:host {
+    display: grid;
+    @extend %cover;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: var(--size-small);
+
+    zen-side-menu {
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        grid-row-start: 1;
+        grid-row-end: span 8;
+        --card-padding: #{default('size-small')};
+    }
+    zen-router {
+        grid-column-start: 3;
+        grid-column-end: span 10;
+        grid-row-start: 1;
+        grid-row-end: span 8;
+    }
+}

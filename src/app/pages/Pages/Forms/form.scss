@@ -1,0 +1,11 @@
+:host {
+    header {
+        display: flex;
+        width: 100%;
+        align-items: center;
+
+        h3 {
+            flex-grow: 1;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@import 'zen-css/import';
+@import 'zen-css/components/card';
+
+:host {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-gap: var(--size-small);
+
+    .title {
+        grid-area: 1 / span 10;
+        --card-padding: var(--size-small);
+    }
+}
+
+

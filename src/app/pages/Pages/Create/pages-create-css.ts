@@ -1,0 +1,3 @@
+import {html} from '@polymer/lit-element';
+export default html`<style>.card{background:var(--card-bg, var(--color-white, #fff));border:var(--card-border, );border-radius:var(--card-border-radius, var(--border-radius, .4rem));padding:var(--card-padding, var(--size-main, 4rem));box-shadow:var(--card-shadow, var(--shadow-main-soft, 0 var(--size-tiny, 1rem) var(--size-main, 4rem) var(--color-main-soft, rgba(105,58,145,0.1))))}.card.hover{background-color:transparent;box-shadow:none;transition:all var(--transition-time)}.card.hover:hover{background-color:var(--card-bg);box-shadow:var(--card-shadow)}:host{display:grid;grid-template-columns:repeat(11, 1fr);grid-gap:var(--size-small)}:host .title{grid-area:1 / span 10;--card-padding: var(--size-small)}
+</style>`;

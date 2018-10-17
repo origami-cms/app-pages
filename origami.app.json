@@ -1,0 +1,20 @@
+{
+    "name": "Pages",
+    "icon": "./icon.svg",
+
+    "admin": {
+        "uriBase": "/pages",
+        "entryElement": "app-pages",
+        "entryScripts": ["/app.min.js"],
+        "public": "./public"
+    },
+
+
+    "resources": {
+        "page": "./models/page"
+    },
+
+    "plugins": {},
+
+    "routes": {}
+}
