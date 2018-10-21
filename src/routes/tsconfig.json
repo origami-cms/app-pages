@@ -1,0 +1,34 @@
+{
+    "include": [
+        "**/*"
+    ],
+    "exclude": [],
+    "compilerOptions": {
+        "rootDir": "./",
+        "outDir": "../../routes",
+        "moduleResolution": "node",
+        "baseUrl": "./",
+        "declaration": true,
+        "target": "es2018",
+        "module": "commonjs",
+        "lib": [
+            "es5",
+            "es6",
+            "es2015.symbol",
+            "es2015.promise",
+            "dom",
+            "es2017.object",
+            "es2016.array.include"
+        ],
+        "skipLibCheck": true,
+        "strict": true,
+        "noImplicitAny": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "typeRoots": [
+            "./types/*"
+        ]
+    }
+}
