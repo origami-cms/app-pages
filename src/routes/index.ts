@@ -1,21 +1,20 @@
-import {statSync} from 'fs';
-import {Renderer, resolveLib, error} from 'origami-core-lib';
-import Server from 'origami-core-server';
+import { error, Renderer, resolveLib, Server } from '@origami/core';
+import { statSync } from 'fs';
 import path from 'path';
-
 // Render sass/less/etc files from the theme's styles directory
+// @ts-ignore
 import cssRouter from './content/css';
-
 // Render pages in the theme/pages directory
+// @ts-ignore
 import pagesRouter from './content/pages';
-
-// Render the templates in the theme/templates directory
-import templateRouter from './pages/templates';
-
 // Render the templates in the pages/templates directory
+// @ts-ignore
 import previewRouter from './pages/preview';
-
+// Render the templates in the theme/templates directory
+// @ts-ignore
+import templateRouter from './pages/templates';
 // Mount all the routes in the themes routes/ folder
+// @ts-ignore
 import routesRouter from './themeRoutes';
 
 
@@ -39,7 +38,7 @@ module.exports = async (app: Server, options: AppPagesOptions) => {
         pagesRouter,
         templateRouter,
         previewRouter
-    ].forEach(r => r(app, themePath, renderer));
+    ].forEach((r) => r(app, themePath, renderer));
 
     routesRouter(app, themePath, options);
 

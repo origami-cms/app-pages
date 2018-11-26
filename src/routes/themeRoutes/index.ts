@@ -1,9 +1,8 @@
+import { error, Server } from '@origami/core';
 import fs from 'fs';
-import Server from 'origami-core-server';
 import path from 'path';
-import {promisify} from 'util';
-import {AppPagesOptions} from '..';
-import { error } from 'origami-core-lib';
+import { promisify } from 'util';
+import { AppPagesOptions } from '..';
 
 const readDir = promisify(fs.readdir);
 
