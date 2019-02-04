@@ -11,7 +11,7 @@
     "build:app": "tsc -p src/app/tsconfig.json --outDir jsBuild/",
     "build:rollup": "rollup -c; rm -rf jsBuild",
     "build:routes": "rm -rf routes/; tsc -p src/routes/tsconfig.json",
-    "build": "yarn build:app:sass; yarn build:app; NODE_ENV=production yarn build:rollup",
+    "build": "yarn build:app:sass; yarn build:app; NODE_ENV=production yarn build:rollup; yarn build:routes",
     "watch": "yarn build:app:sass -w & tsc -p src/app/tsconfig.json -w --outDir jsBuild/ & rollup -cw"
   },
   "devDependencies": {
@@ -42,6 +42,7 @@
     "zen-css": "^1.1.16"
   },
   "dependencies": {
-    "@origami/core": "^0.0.3-alpha.1"
+    "@origami/core": "^0.0.3-alpha.1",
+    "url": "^0.11.0"
   }
 }

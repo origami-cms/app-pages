@@ -1,5 +1,6 @@
 import { findFile, Origami, Renderer } from '@origami/core';
 import path from 'path';
+import url from 'url';
 
 // Attempt to lookup a page in the store and save to the request
 export const getPageData: Origami.Server.RequestHandler = async (
@@ -7,10 +8,12 @@ export const getPageData: Origami.Server.RequestHandler = async (
   res,
   next
 ) => {
+  const pathname = url.parse(req.originalUrl).pathname;
+
   const [page] = await res.app
     .get('store')
     .model('page')
-    .find({ url: req.originalUrl });
+    .find({ url: pathname });
 
   if (page) {
     res.locals.content.set(page.toObject());
