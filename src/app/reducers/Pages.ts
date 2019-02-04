@@ -1,4 +1,4 @@
-import { APIReducer, ResourceState } from '@origamijs/zen-lib';
+import { APIReducer, ResourceState } from '@origami/zen-lib/API';
 import { PAGE_DATA_SET, PAGE_PROPERTIES_SET } from '../actions/Pages';
 import { AnyAction } from 'redux';
 import { ImmutableArray, ImmutableObject } from 'seamless-immutable';

@@ -1,5 +1,5 @@
-import { ButtonOptions } from '@origamijs/zen';
-import { FormValues } from '@origamijs/zen-lib';
+import { ButtonOptions } from '@origami/zen';
+import { FormValues } from '@origami/zen-lib/FormValidator';
 import { html, LitElement, property } from '@polymer/lit-element';
 import { connect } from 'pwa-helpers/connect-mixin';
 import { pagesGet, pagesUpdate, pagesRemove } from '../../../actions';

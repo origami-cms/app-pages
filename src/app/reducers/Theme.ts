@@ -1,4 +1,4 @@
-import { Field } from '@origamijs/zen-lib';
+import { Field } from '@origami/zen-lib/FormValidator';
 import { AnyAction } from 'redux';
 import immutable from 'seamless-immutable';
 import { THEME_TEMPLATES_SET } from '../actions/Theme';

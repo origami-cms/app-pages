@@ -1,4 +1,4 @@
-import { SideMenuLink, ZenRoute } from '@origamijs/zen';
+import { SideMenuLink, ZenRoute } from '@origami/zen';
 import { html, LitElement } from '@polymer/lit-element';
 import { themeTemplatesGet } from '../../actions';
 

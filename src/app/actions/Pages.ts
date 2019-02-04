@@ -1,4 +1,5 @@
-import {APIActions} from '@origamijs/zen-lib';
+// tslint:disable-next-line:no-submodule-imports
+import {APIActions} from '@origami/zen-lib/API';
 import { Dispatch } from 'redux';
 
 export const PAGE_PROPERTIES_SET = 'PAGE_PROPERTIES_SET';

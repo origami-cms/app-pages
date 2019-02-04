@@ -325,13 +325,15 @@
     tslint-config-airbnb "^5.11.0"
     tslint-config-prettier "^1.16.0"
 
-"@origamijs/zen-lib@^0.0.0":
-  version "0.0.0"
-  resolved "https://registry.yarnpkg.com/@origamijs/zen-lib/-/zen-lib-0.0.0.tgz#6ddd281d5fa874682c5ae418a1b9685dbdf924ae"
+"@origami/zen-lib@^0.0.4-alpha.0":
+  version "0.0.4-alpha.0"
+  resolved "https://registry.yarnpkg.com/@origami/zen-lib/-/zen-lib-0.0.4-alpha.0.tgz#244d176871d87823c2df2436fbec6e47da98f9dd"
+  dependencies:
+    polymer3-decorators "^0.0.1"
 
-"@origamijs/zen@^0.0.0":
-  version "0.0.0"
-  resolved "https://registry.yarnpkg.com/@origamijs/zen/-/zen-0.0.0.tgz#10e02f4703359ac1db43205b027d2def89c97a9f"
+"@origami/zen@^0.0.4-alpha.0":
+  version "0.0.4-alpha.0"
+  resolved "https://registry.yarnpkg.com/@origami/zen/-/zen-0.0.4-alpha.0.tgz#947aa3e9997a62281b46b2e3e030f27597a607e2"
 
 "@polymer/lit-element@^0.6.1":
   version "0.6.1"
@@ -2809,6 +2811,12 @@ pluralize@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-7.0.0.tgz#298b89df8b93b0221dbf421ad2b1b1ea23fc6777"
 
+polymer3-decorators@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/polymer3-decorators/-/polymer3-decorators-0.0.1.tgz#6667bf7c7ed596bc6cc62892243b075ecad9eaea"
+  dependencies:
+    reflect-metadata "^0.1.10"
+
 preserve@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
@@ -2973,6 +2981,10 @@ redux@*, redux@^4.0.0:
 referrer-policy@1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/referrer-policy/-/referrer-policy-1.1.0.tgz#35774eb735bf50fb6c078e83334b472350207d79"
+
+reflect-metadata@^0.1.10:
+  version "0.1.13"
+  resolved "https://registry.yarnpkg.com/reflect-metadata/-/reflect-metadata-0.1.13.tgz#67ae3ca57c972a2aa1642b10fe363fe32d49dc08"
 
 reflect-metadata@^0.1.12:
   version "0.1.12"
