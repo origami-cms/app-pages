@@ -24,6 +24,7 @@ module.exports = (app: Server, themePath: string, renderer: Renderer) => {
             includePaths: [
               // Use the node_modules of the library and the theme as
               // includePaths for node-sass
+              path.dirname(file),
               path.resolve(themePath, 'node_modules'),
               path.resolve(process.cwd(), 'node_modules')
             ]
